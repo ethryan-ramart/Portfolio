@@ -1,7 +1,9 @@
 "use client";
+import AgeCard from "@/components/AgeCard";
+import AwakeSwitch from "@/components/AwakeSwitch";
 import useTheme from "@/hooks/useTheme";
-import { Grid, Switch } from "@mui/material";
-import { useState } from "react";
+import { LinkedIn } from "@mui/icons-material";
+import { Switch } from "@mui/material";
 
 export default function Home() {
   const theme = useTheme();
@@ -14,15 +16,15 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm cursor-pointer hover:scale-[103%] transition duration-300 ease-in-out">
           <Switch checked={theme.darkMode} onChange={theme.toggleTheme} />
         </div>
-        <div className="flex justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm">
-          
+        <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm">
+         <AwakeSwitch />
         </div>
-        <div className="text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#ff4848d3] p-4 justify-center items-center">
-          
-        </div>
-        <a className="flex flex-col justify-center items-center bg-[#1178ff9c] dark:bg-[#49a7ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm cursor-pointer hover:scale-[103%] transition duration-300 ease-in-out">
-          
+        <a href="https://www.linkedin.com/in/leonelramart/" target="_blank" className="flex flex-col justify-center items-center bg-[#1178ff9c] dark:bg-[#49a7ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm cursor-pointer hover:scale-[103%] transition duration-300 ease-in-out">
+          <LinkedIn sx={{fontSize: '900%'}} />
         </a>
+        <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#ff4848d3] p-4 justify-center items-center">
+          <AgeCard />
+        </div>
         <a className="relative rounded-3xl col-span-2 md:aspect-auto overflow-hidden hover:scale-[103%] transition duration-500 ease-in-out bg-[#1c053a9c]">
           
         </a>

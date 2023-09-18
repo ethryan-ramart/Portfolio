@@ -49,7 +49,55 @@
     opacity: 1;
   }
 }
+/* Estilo que dibuja un ovalo y gira sobre su propio eje infinitamente */
+.ola {
+  position: absolute;
+  top: -250px;
+  left: 20%;
+  width: 1000px;
+  height: 900px;
+  background-color: #fdc3ff;
+  border-radius: 56%;
+  animation: rotate 5s linear infinite;
+}
+.ola2{
+  position: absolute;
+  top: -250px;
+  left: 20%;
+  width: 1000px;
+  height: 900px;
+  background-color: white;
+  border-radius: 56%;
+  animation: rotate 5s linear infinite;
+}
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Iconos */
+.icono {
+  font-size: 1500%; /* Tamaño inicial del icono */
+}
+
+/* Cambia el tamaño del icono en pantallas más pequeñas */
+@media (max-width: 1030px) {
+  .icono {
+    font-size: 1000%; 
+  }
+}
+
+/* Cambia el tamaño del icono en pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .icono {
+    font-size: 700%;
+  }
+}
 
 /* Awake switch */
 .switch {

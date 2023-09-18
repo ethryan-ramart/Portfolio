@@ -23,7 +23,7 @@ export default function Home() {
           target="_blank"
           className="flex flex-col justify-center items-center bg-[#1178ff9c] dark:bg-[#49a7ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm cursor-pointer hover:scale-[103%] transition duration-300 ease-in-out"
         >
-          <LinkedIn sx={{ fontSize: "900%" }} />
+          <LinkedIn className="icono"/>
         </a>
         <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#ff4848d3] p-4 justify-center items-center">
           <AgeCard />

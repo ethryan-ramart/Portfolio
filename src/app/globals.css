@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  display:flex;
-  flex-direction:column;
-  width: 100%;
-  background-color: #f0e8f7;
-  color: #6e5e82;  
+#body {
+  height: 100vh;
+  overflow: hidden scroll;
 }
 
-.light {
-  display:flex;
-  flex-direction:column;
+.light-mode {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #f0e8f7;
   color: #6e5e82;
@@ -20,13 +17,12 @@
 }
 
 .dark {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #120c17;
   color: #ffffff;
   transition: background-color 0.3s ease;
-
 }
 
 /* Awake switch */
@@ -35,50 +31,58 @@
   display: block;
   width: 90px;
   height: 55px;
-
 }
 
-.slider{
+.slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: white;
-  transition: .5s;
-  border: 3px solid black;
+  background: linear-gradient(
+    297deg,
+    rgba(70, 205, 242, 1) 0%,
+    rgba(127, 176, 249, 1) 52%,
+    rgba(231, 235, 244, 1) 82%
+  );
+  border: 3px solid white;
   box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.1);
 }
 
-.slider:before{
+.slider:before {
   position: absolute;
   content: "";
   bottom: 14px;
   top: 8px;
-  background-color: lightgray;
-  transition: .5s;
+  background-color: yellow;
+  transition: 0.5s;
 }
 
-.switch input{
+.switch input {
   display: none;
 }
 
-input:checked + .slider{
-  background-color: black;
+input:checked + .slider {
+  background: linear-gradient(
+    56deg,
+    rgba(33, 138, 167, 1) 0%,
+    rgba(45, 90, 156, 1) 52%,
+    rgba(24, 46, 97, 1) 95%
+  );
 }
 
-input:checked + .slider:before{
+input:checked + .slider:before {
   transform: translateX(47px) rotateZ(45deg);
 
-  background-color: yellow;
+  background-color: #f1edb7;
 }
 
-.slider.round{
+.slider.round {
   border-radius: 34px;
 }
 
-.slider.round:before{
+.slider.round:before {
   width: 43%;
   height: 43%;
   border-top-left-radius: 50px;

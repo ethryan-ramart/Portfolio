@@ -9,8 +9,8 @@ export default function AgeCard() {
   const props = useSpring({
     number: AgeCalculator("1999-10-10"),
     from: { number: 0 },
-    config: { duration: 500 }, // Duración de la animación en milisegundos
-    delay: 0, // Retardo antes de que comience la animación en milisegundos
+    config: { duration: 1000 },
+    delay: 0,
     onFrame: ({ number }) => {
       setEdad(Math.floor(number));
     },

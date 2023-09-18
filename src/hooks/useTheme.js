@@ -23,12 +23,14 @@ export default function useTheme() {
 
   useEffect(() => {
     const htmlElement = document.querySelector("#body");
-    const theme = localStorage.getItem("theme");
-    setDarkMode(theme === "dark");
-    if (theme === "light") {
-      htmlElement.classList.add("light-mode");
-    } else if (theme === "dark") {
-      htmlElement.classList.add("dark");
+    if (typeof window !== 'undefined') {
+      const theme = localStorage.getItem("theme");
+      setDarkMode(theme === "dark");
+      if (theme === "light") {
+        htmlElement.classList.add("light-mode");
+      } else if (theme === "dark") {
+        htmlElement.classList.add("dark");
+      }
     }
   }, [])
   return { darkMode, toggleTheme };

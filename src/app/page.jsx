@@ -7,6 +7,9 @@ import { LinkedIn } from "@mui/icons-material";
 
 export default function Home() {
   const theme = useTheme();
+  useEffect(() => {
+    const item = localStorage.getItem("key");
+  }, []);
   return (
     <div id="body" className="light-mode">
       <div className="bounce-animation grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 my-5 container mx-auto xl:px-20  md:p-5">

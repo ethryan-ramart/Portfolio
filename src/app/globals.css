@@ -88,7 +88,7 @@
 /* Cambia el tamaño del icono en pantallas más pequeñas */
 @media (max-width: 1030px) {
   .icono {
-    font-size: 1000%; 
+    font-size: 800%; 
   }
 }
 

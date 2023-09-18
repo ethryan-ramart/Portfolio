@@ -23,7 +23,7 @@ export default function useTheme() {
 
   useEffect(() => {
     const htmlElement = document.querySelector("#body");
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && window.localStorage) {
       const theme = localStorage.getItem("theme");
       setDarkMode(theme === "dark");
       if (theme === "light") {

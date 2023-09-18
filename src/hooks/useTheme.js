@@ -3,7 +3,7 @@ import { dark } from "@mui/material/styles/createPalette";
 import { useEffect, useState } from "react";
 
 export default function useTheme() {
-  const [darkMode, setDarkMode] = useState(localStorage.getItem("theme")=== "dark");
+  const [darkMode, setDarkMode] = useState(localStorage?.getItem("theme")=== "dark" || false);
   
   const toggleTheme = () => {
     const htmlElement = document.querySelector("#body");

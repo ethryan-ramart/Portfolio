@@ -4,6 +4,7 @@ import PresentationCard from "@/components/PresentationCard";
 import SwitchTheme from "@/components/SwitchTheme";
 import useTheme from "@/hooks/useTheme";
 import { LinkedIn } from "@mui/icons-material";
+import { useEffect } from "react";
 
 export default function Home() {
   const theme = useTheme();

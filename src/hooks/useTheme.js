@@ -1,3 +1,4 @@
+"use client"
 import { dark } from "@mui/material/styles/createPalette";
 import { useEffect, useState } from "react";
 

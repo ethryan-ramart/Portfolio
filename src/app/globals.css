@@ -60,16 +60,6 @@
   border-radius: 56%;
   animation: rotate 5s linear infinite;
 }
-.ola2{
-  position: absolute;
-  top: -250px;
-  left: 20%;
-  width: 1000px;
-  height: 900px;
-  background-color: white;
-  border-radius: 56%;
-  animation: rotate 5s linear infinite;
-}
 
 @keyframes rotate {
   0% {
@@ -82,20 +72,20 @@
 
 /* Iconos */
 .icono {
-  font-size: 1500%; /* Tamaño inicial del icono */
+  font-size: 250px; /* Tamaño inicial del icono */
 }
 
 /* Cambia el tamaño del icono en pantallas más pequeñas */
 @media (max-width: 1030px) {
   .icono {
-    font-size: 800%; 
+    font-size: 150px; 
   }
 }
 
 /* Cambia el tamaño del icono en pantallas aún más pequeñas */
 @media (max-width: 480px) {
   .icono {
-    font-size: 700%;
+    font-size: 100px;
   }
 }
 

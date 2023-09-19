@@ -9,9 +9,9 @@ export default function useTheme() {
     const htmlElement = document.querySelector("#body");
     if (darkMode) {
       htmlElement.classList["remove"]("dark");
-      htmlElement.classList["add"]("light-mode");
+      htmlElement.classList["add"]("light");
     } else {
-      htmlElement.classList["remove"]("light-mode");
+      htmlElement.classList["remove"]("light");
       htmlElement.classList["add"]("dark");
     }
 
@@ -27,7 +27,7 @@ export default function useTheme() {
       const theme = localStorage.getItem("theme");
       setDarkMode(theme === "dark");
       if (theme === "light") {
-        htmlElement.classList.add("light-mode");
+        htmlElement.classList.add("light");
       } else if (theme === "dark") {
         htmlElement.classList.add("dark");
       }

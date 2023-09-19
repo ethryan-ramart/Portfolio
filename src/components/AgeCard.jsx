@@ -19,7 +19,7 @@ export default function AgeCard() {
   return (
     <>
       <Typography variant="h6" className="text-white">
-        Age
+        Edad
       </Typography>
       <Typography variant="h2" className="text-white">
         <animated.span>
@@ -27,7 +27,7 @@ export default function AgeCard() {
         </animated.span>
       </Typography>
       <Typography variant="h6" className="text-white">
-        Years Old
+        Años
       </Typography>
     </>
   );

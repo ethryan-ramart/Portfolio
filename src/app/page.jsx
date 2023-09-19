@@ -9,9 +9,9 @@ import { useEffect } from "react";
 export default function Home() {
   const theme = useTheme();
   return (
-    <div id="body" className="light-mode">
+    <div id="body" className="light">
       <div className="bounce-animation grid grid-cols-3 gap-2 md:grid-cols-4 md:gap-4 my-5 container mx-auto xl:px-20  md:p-5">
-        <div className="relative col-span-3 aspect-square md:aspect-auto md:row-span-2 bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl overflow-hidden">
+        <div className="relative col-span-3 aspect-square md:aspect-auto md:row-span-2 light:bg-[#6e5d83] dark:bg-[#af72ff56] rounded-3xl overflow-hidden">
           <PresentationCard />
         </div>
         <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm ">

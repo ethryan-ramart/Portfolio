@@ -9,7 +9,7 @@
   overflow: hidden scroll;
 }
 
-.light-mode {
+.light {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -52,13 +52,13 @@
 /* Estilo que dibuja un ovalo y gira sobre su propio eje infinitamente */
 .ola {
   position: absolute;
-  top: -250px;
-  left: 20%;
-  width: 1000px;
-  height: 900px;
-  background-color: #fdc3ff;
-  border-radius: 56%;
-  animation: rotate 5s linear infinite;
+  top: 60%;
+  left: -10%;
+  width: 1100px;
+  height: 1000px;
+  background-color: rgb(253, 195, 255, 0.5);
+  border-radius: 50%;
+  animation: rotate 17s linear infinite;
 }
 
 @keyframes rotate {

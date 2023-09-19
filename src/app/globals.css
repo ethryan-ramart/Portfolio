@@ -72,20 +72,20 @@
 
 /* Iconos */
 .icono {
-  font-size: 250px; /* Tamaño inicial del icono */
+  font-size: 250px !important; /* Tamaño inicial del icono */
 }
 
 /* Cambia el tamaño del icono en pantallas más pequeñas */
 @media (max-width: 1030px) {
   .icono {
-    font-size: 150px; 
+    font-size: 150px !important; 
   }
 }
 
 /* Cambia el tamaño del icono en pantallas aún más pequeñas */
 @media (max-width: 480px) {
   .icono {
-    font-size: 100px;
+    font-size: 100px !important;
   }
 }
 

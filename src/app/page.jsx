@@ -1,5 +1,6 @@
 "use client";
 import AgeCard from "@/components/AgeCard";
+import LenguajesCard from "@/components/LenguajesCard";
 import PresentationCard from "@/components/PresentationCard";
 import SwitchTheme from "@/components/SwitchTheme";
 import useTheme from "@/hooks/useTheme";
@@ -17,7 +18,9 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm ">
           <SwitchTheme theme={theme} />
         </div>
-        <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm"></div>
+        <div className="flex flex-col justify-center items-center bg-[#1c053a9c] dark:bg-[#af72ff56] rounded-3xl relative overflow-hidden col-span-1 aspect-square shadow-sm">
+          <LenguajesCard />
+        </div>
         <a
           href="https://www.linkedin.com/in/leonelramart/"
           target="_blank"

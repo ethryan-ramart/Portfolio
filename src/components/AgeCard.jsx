@@ -18,10 +18,10 @@ export default function AgeCard() {
 
   return (
     <>
-      <Typography variant="h6" className="text-white">
+      <Typography variant="h5" className="text-white">
         Edad
       </Typography>
-      <Typography variant="h2" className="text-white">
+      <Typography variant="h3" className="text-white">
         <animated.span>
           {props.number.to((val) => Math.floor(val))}
         </animated.span>

@@ -1,5 +1,6 @@
 "use client";
 import AgeCard from "@/components/AgeCard";
+import DownloadCV from "@/components/DownloadCV";
 import LenguajesCard from "@/components/LenguajesCard";
 import PresentationCard from "@/components/PresentationCard";
 import SwitchTheme from "@/components/SwitchTheme";
@@ -33,6 +34,9 @@ export default function Home() {
             <AgeCard />
           </div>
           <a className="relative rounded-3xl col-span-2 md:aspect-auto overflow-hidden cursor-pointer hover:scale-[103%] transition duration-500 ease-in-out bg-[#1c053a9c]"></a>
+          <a className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4  hover:scale-[103%] transition duration-500 justify-center items-center">
+            <DownloadCV />
+          </a>
         </div>
       </div>
     </div>

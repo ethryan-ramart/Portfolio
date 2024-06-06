@@ -2,6 +2,7 @@ import AgeCalculator from "@/js/AgeCalculator";
 import { Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import ResponsiveTypography from "./ResponsiveTypografy";
 
 export default function AgeCard() {
   const [edad, setEdad] = useState(0);
@@ -17,18 +18,14 @@ export default function AgeCard() {
   });
 
   return (
-    <>
-      <Typography variant="h5" className="text-white">
-        Edad
-      </Typography>
-      <Typography variant="h3" className="text-white">
+    <>      
+      <Typography variant="h2" className="text-white">
         <animated.span>
           {props.number.to((val) => Math.floor(val))}
         </animated.span>
       </Typography>
-      <Typography variant="h6" className="text-white">
-        Años
-      </Typography>
+      <ResponsiveTypography text="Años" textColor="white" xs="2rem" sm="2.5rem"/>
+
     </>
   );
 }

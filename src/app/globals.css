@@ -167,3 +167,15 @@ input:checked + .slider:before {
   border-top-right-radius: 50px;
   transform: rotateZ(-45deg);
 }
+
+/* Laboral Experience card */
+.bg-laboral-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos para el texto de la tarjeta */
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}

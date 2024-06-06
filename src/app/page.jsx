@@ -1,6 +1,7 @@
 "use client";
 import AgeCard from "@/components/AgeCard";
 import DownloadCV from "@/components/DownloadCV";
+import LaboralExperienceCard from "@/components/LaboralExperienceCard";
 import LenguajesCard from "@/components/LenguajesCard";
 import PresentationCard from "@/components/PresentationCard";
 import SwitchTheme from "@/components/SwitchTheme";
@@ -33,10 +34,12 @@ export default function Home() {
           <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#ff4848d3] p-4 justify-center items-center">
             <AgeCard />
           </div>
-          <a className="relative rounded-3xl col-span-2 md:aspect-auto overflow-hidden cursor-pointer hover:scale-[103%] transition duration-500 ease-in-out bg-[#1c053a9c]"></a>
-          <a className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4  hover:scale-[103%] transition duration-500 justify-center items-center">
-            <DownloadCV />
+          <a className="flex flex-col justify-end items-center relative rounded-3xl col-span-2 md:aspect-auto overflow-hidden cursor-pointer hover:scale-[103%] transition duration-500 ease-in-out bg-[url(../../public/assets/images/dog-fire.gif)] bg-cover bg-center">
+            <LaboralExperienceCard />
           </a>
+          <div className="flex flex-col text-white rounded-3xl flex relative overflow-hidden aspect-square shadow-sm bg-[#a781b7] p-4  hover:scale-[103%] transition duration-500 justify-center items-center">
+            <DownloadCV />
+          </div>
         </div>
       </div>
     </div>
